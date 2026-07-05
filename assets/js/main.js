@@ -1,8 +1,4 @@
-/* ============================================
-   DriveAuto Parts — Main Script
-   ============================================ */
-
-/* ---------- 1. Navigasi Mobile (Hamburger Menu) ---------- */
+/* 1. Navigasi Mobile (Hamburger Menu) */
 document.addEventListener('DOMContentLoaded', function () {
   const burger = document.querySelector('.burger');
   const navLinks = document.querySelector('.nav-links');
@@ -20,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-/* ---------- 2. Keranjang Belanja Sederhana ---------- */
+/* 2. Keranjang Belanja Sederhana */
 let cartCount = 0;
 
 function initCart() {
@@ -66,7 +62,7 @@ function showToast(message) {
   }, 2400);
 }
 
-/* ---------- 3. Filter & Pencarian Produk ---------- */
+/* 3. Filter & Pencarian Produk */
 document.addEventListener('DOMContentLoaded', function () {
   const filterButtons = document.querySelectorAll('.filter-bar button');
   const searchInput = document.querySelector('#product-search');
@@ -105,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-/* ---------- 4. Slider Testimoni ---------- */
+/* 4. Slider Testimoni */
 document.addEventListener('DOMContentLoaded', function () {
   const slides = document.querySelectorAll('.slide');
   const dotsWrap = document.querySelector('.slider-dots');
@@ -129,7 +125,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }, 5000);
 });
 
-/* ---------- 5. Validasi Form Kontak ---------- */
+/* 5. Validasi Form Kontak */
 document.addEventListener('DOMContentLoaded', function () {
   const form = document.querySelector('#contact-form');
   if (!form) return;
@@ -164,7 +160,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-/* ---------- 6. Tahun Otomatis di Footer ---------- */
+/* 6. Tahun Otomatis di Footer */
 document.addEventListener('DOMContentLoaded', function () {
   const yearEl = document.querySelector('#current-year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();

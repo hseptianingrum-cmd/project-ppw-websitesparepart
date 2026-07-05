@@ -9,12 +9,10 @@
 </head>
 <body>
 
-<div class="hazard-strip"></div>
-
 <header class="site-header">
   <div class="wrap nav">
     <a href="index.html" class="brand">
-      <span>DRIVE<span class="dot">AUTO</span><br><small>SPAREPART STORE No.1</small></span>
+      <span>DRIVE<span class="dot">AUTO</span><br><small>SPAREPART STORE</small></span>
     </a>
     <nav class="nav-links">
       <a href="index.html">Beranda</a>
@@ -23,10 +21,6 @@
       <a href="tentang.html">Tentang Kami</a>
       <a href="kontak.html">Kontak</a>
     </nav>
-    <div class="nav-cta">
-      <button class="cart-btn" aria-label="Keranjang belanja">🛒 Keranjang <span class="cart-count">0</span></button>
-      <button class="burger" aria-label="Buka menu"><span></span><span></span><span></span></button>
-    </div>
   </div>
 </header>
 
@@ -44,7 +38,6 @@
     </div>
     <div class="filter-bar">
       <button class="active" data-filter="all">Semua</button>
-      <button data-filter="ban">Ban &amp; Velg</button>
       <button data-filter="oli">Oli &amp; Cairan</button>
       <button data-filter="rem">Rem &amp; Suspensi</button>
       <button data-filter="listrik">Kelistrikan</button>
@@ -57,83 +50,113 @@
           <tr><th>Produk</th><th>Kategori</th><th>Kompatibilitas</th><th>Harga</th><th>Stok</th><th></th></tr>
         </thead>
         <tbody>
-          <tr data-category="ban" data-name="Ban GripMax 185/65 R15">
-            <td class="prod-name"><img class="prod-thumb" src="https://placehold.co/100x100/24262F/FF5A1F?text=BAN" alt="Ban GripMax 185/65 R15">Ban GripMax 185/65 R15</td>
-            <td>Ban &amp; Velg</td><td>Hatchback</td><td class="price">Rp 720.000</td>
+          <tr data-category="oli" data-name="Oli Mesin Deltalube 5L">
+            <td class="prod-name"><img class="prod-thumb" src="assets/img/olideltalube.png" 
+              alt="Oli mesin Deltalube 5L">Oli Mesin Deltalube 5L</td>
+            <td>Oli Mesin</td><td>Mobil</td><td class="price">Rp 145.000</td>
             <td><span class="stock-ok">● Tersedia</span></td>
-            <td><button class="add-btn" data-product="Ban GripMax 185/65">+ Keranjang</button></td>
           </tr>
-          <tr data-category="ban" data-name="Velg Racing TR-9 R17">
-            <td class="prod-name"><img class="prod-thumb" src="https://placehold.co/100x100/24262F/FF5A1F?text=VELG" alt="Velg Racing TR-9 R17">Velg Racing TR-9 R17</td>
-            <td>Ban &amp; Velg</td><td>Sedan/MPV</td><td class="price">Rp 1.850.000</td>
+          <tr data-category="oli" data-name="Oli Mesin Rored 5L">
+            <td class="prod-name"><img class="prod-thumb" src="assets/img/olirored.png" 
+              alt="Oli mesin Rored 5L">Oli Mesin Rored 5L</td>
+            <td>Oli Mesin</td><td>Mobil</td><td class="price">Rp 145.000</td>
+            <td><span class="stock-ok">● Tersedia</span></td>
+          </tr>
+          <tr data-category="oli" data-name="Oli Mesin Meditran SX 1L">
+            <td class="prod-name"><img class="prod-thumb" src="assets/img/olimedsx.png" 
+              alt="Oli mesin Meditran SX 1L">Oli Mesin Meditran SX 1L</td>
+            <td>Oli Mesin</td><td>Mobil</td><td class="price">Rp 110.000</td>
+            <td><span class="stock-ok">● Tersedia</span></td>
+          </tr>
+          <tr data-category="oli" data-name="Oli Mesin Prima XP 5L">
+            <td class="prod-name"><img class="prod-thumb" src="assets/img/oliprima.png" 
+              alt="Oli mesin Prima XP 5L">Oli Mesin Prima XP 5L</td>
+            <td>Oli Mesin</td><td>Mobil</td><td class="price">Rp 120.000</td>
+            <td><span class="stock-ok">● Tersedia</span></td>
+          </tr>
+          <tr data-category="oli" data-name="Minyak Rem Prestone 1000ml">
+            <td class="prod-name"><img class="prod-thumb" src="assets/img/minyakrem.jpg" 
+              alt="Minyak rem Prestone 1000ml">Minyak Rem Prestone 1000ml</td>
+            <td>Oli &amp; Cairan</td><td>Mobil & Motor</td><td class="price">Rp 90.000</td>
+            <td><span class="stock-ok">● Tersedia</span></td>
+          </tr>
+          <tr data-category="oli" data-name="Coolant Radiator Master 4L">
+            <td class="prod-name"><img class="prod-thumb" src="assets/img/coolantmaster.jpg" 
+              alt="Coolant Radiator Master 4L">Coolant Radiator Master 4L</td>
+            <td>Oli &amp; Cairan</td><td>Mobil</td><td class="price">Rp 80.000</td>
+            <td><span class="stock-ok">● Tersedia</span></td>
+          </tr>
+          <tr data-category="rem" data-name="Kampas Rem Canter">
+            <td class="prod-name"><img class="prod-thumb" src="assets/img/kampascanter.png" 
+              alt="Kampas rem Canter">Kampas Rem Canter</td>
+            <td>Rem &amp; Suspensi</td><td>Mobil</td><td class="price">Rp 215.000</td>
+            <td><span class="stock-ok">● Tersedia</span></td>
+          </tr>
+          <tr data-category="rem" data-name="Kampas Rem HDX">
+            <td class="prod-name"><img class="prod-thumb" src="assets/img/k.remhdx.jpeg" 
+              alt="Kampas rem HDX">Kampas Rem HDX</td>
+            <td>Rem &amp; Suspensi</td><td>Mobil</td><td class="price">Rp 215.000</td>
+            <td><span class="stock-ok">● Tersedia</span></td>
+          </tr>
+          <tr data-category="rem" data-name="Kampas Rem">
+            <td class="prod-name"><img class="prod-thumb" src="assets/img/kampas.jpg" 
+              alt="Kampas rem">Kampas Rem</td>
+            <td>Rem &amp; Suspensi</td><td>Mobil</td><td class="price">Rp 210.000</td>
             <td><span class="stock-low">● Terbatas</span></td>
-            <td><button class="add-btn" data-product="Velg Racing TR-9">+ Keranjang</button></td>
           </tr>
-          <tr data-category="ban" data-name="Ban Motor RoadGrip 80/90 R17">
-            <td class="prod-name"><img class="prod-thumb" src="https://placehold.co/100x100/24262F/FF5A1F?text=BAN" alt="Ban Motor RoadGrip">Ban Motor RoadGrip 80/90 R17</td>
-            <td>Ban &amp; Velg</td><td>Motor Bebek/Matic</td><td class="price">Rp 285.000</td>
-            <td><span class="stock-ok">● Tersedia</span></td>
-            <td><button class="add-btn" data-product="Ban Motor RoadGrip">+ Keranjang</button></td>
-          </tr>
-          <tr data-category="oli" data-name="DriveAuto Synthetic 10W-40">
-            <td class="prod-name"><img class="prod-thumb" src="https://placehold.co/100x100/24262F/FF5A1F?text=OLI" alt="Oli mesin DriveAuto Synthetic 10W-40">DriveAuto Synthetic 10W-40</td>
-            <td>Oli Mesin</td><td>Mobil &amp; Motor</td><td class="price">Rp 145.000</td>
-            <td><span class="stock-ok">● Tersedia</span></td>
-            <td><button class="add-btn" data-product="Oli Synthetic 10W-40">+ Keranjang</button></td>
-          </tr>
-          <tr data-category="oli" data-name="Minyak Rem DOT 4 PowerStop">
-            <td class="prod-name"><img class="prod-thumb" src="https://placehold.co/100x100/24262F/FF5A1F?text=DOT4" alt="Minyak rem DOT 4 PowerStop">Minyak Rem DOT 4 PowerStop</td>
-            <td>Oli &amp; Cairan</td><td>Universal</td><td class="price">Rp 65.000</td>
-            <td><span class="stock-ok">● Tersedia</span></td>
-            <td><button class="add-btn" data-product="Minyak Rem DOT4">+ Keranjang</button></td>
-          </tr>
-          <tr data-category="oli" data-name="Coolant Radiator ChillFlow">
-            <td class="prod-name"><img class="prod-thumb" src="https://placehold.co/100x100/24262F/FF5A1F?text=COOL" alt="Coolant Radiator ChillFlow">Coolant Radiator ChillFlow</td>
-            <td>Oli &amp; Cairan</td><td>Mobil</td><td class="price">Rp 78.000</td>
-            <td><span class="stock-ok">● Tersedia</span></td>
-            <td><button class="add-btn" data-product="Coolant ChillFlow">+ Keranjang</button></td>
-          </tr>
-          <tr data-category="rem" data-name="Kampas Rem SafeStop">
-            <td class="prod-name"><img class="prod-thumb" src="https://placehold.co/100x100/24262F/FF5A1F?text=REM" alt="Kampas rem SafeStop">Kampas Rem SafeStop</td>
-            <td>Rem &amp; Suspensi</td><td>Universal</td><td class="price">Rp 215.000</td>
-            <td><span class="stock-ok">● Tersedia</span></td>
-            <td><button class="add-btn" data-product="Kampas Rem SafeStop">+ Keranjang</button></td>
-          </tr>
-          <tr data-category="rem" data-name="Brake Disc Pro 280mm">
-            <td class="prod-name"><img class="prod-thumb" src="https://placehold.co/100x100/24262F/FF5A1F?text=DISC" alt="Brake Disc Pro">Brake Disc Pro 280mm</td>
-            <td>Rem &amp; Suspensi</td><td>Sedan/MPV</td><td class="price">Rp 540.000</td>
-            <td><span class="stock-ok">● Tersedia</span></td>
-            <td><button class="add-btn" data-product="Brake Disc Pro">+ Keranjang</button></td>
-          </tr>
-          <tr data-category="rem" data-name="Shockbreaker SmoothRide">
-            <td class="prod-name"><img class="prod-thumb" src="https://placehold.co/100x100/24262F/FF5A1F?text=SHOCK" alt="Shockbreaker SmoothRide">Shockbreaker SmoothRide</td>
-            <td>Rem &amp; Suspensi</td><td>Mobil MPV</td><td class="price">Rp 610.000</td>
+          <tr data-category="listrik" data-name="lampu bohlam 24V">
+            <td class="prod-name"><img class="prod-thumb" src="assets/img/lampu24w.jpg" 
+              alt="Lampu bohlam 24V">Lampu Bohlam 24V</td>
+            <td>Kelistrikan</td><td>Mobil</td><td class="price">Rp 10.000</td>
             <td><span class="stock-low">● Terbatas</span></td>
-            <td><button class="add-btn" data-product="Shockbreaker SmoothRide">+ Keranjang</button></td>
           </tr>
-          <tr data-category="listrik" data-name="Aki Kering PowerCell NS40">
-            <td class="prod-name"><img class="prod-thumb" src="https://placehold.co/100x100/24262F/FF5A1F?text=AKI" alt="Aki kering PowerCell NS40">Aki Kering PowerCell NS40</td>
-            <td>Kelistrikan</td><td>Sedan/MPV</td><td class="price">Rp 980.000</td>
-            <td><span class="stock-low">● Terbatas</span></td>
-            <td><button class="add-btn" data-product="Aki PowerCell NS40">+ Keranjang</button></td>
-          </tr>
-          <tr data-category="listrik" data-name="Lampu LED HeadGlow H4">
-            <td class="prod-name"><img class="prod-thumb" src="https://placehold.co/100x100/24262F/FF5A1F?text=LED" alt="Lampu LED HeadGlow H4">Lampu LED HeadGlow H4</td>
-            <td>Kelistrikan</td><td>Universal</td><td class="price">Rp 175.000</td>
+          <tr data-category="listrik" data-name="Lampu Rem 24V Stanlee">
+            <td class="prod-name"><img class="prod-thumb" src="assets/img/lampurem.jpg"
+              alt="Lampu Rem 24V Stanlee">Lampu Rem 24V Stanlee</td>
+            <td>Kelistrikan</td><td>Mobil</td><td class="price">Rp 15.000</td>
             <td><span class="stock-ok">● Tersedia</span></td>
-            <td><button class="add-btn" data-product="Lampu LED HeadGlow">+ Keranjang</button></td>
           </tr>
-          <tr data-category="mesin" data-name="Filter Udara CleanAir Pro">
-            <td class="prod-name"><img class="prod-thumb" src="https://placehold.co/100x100/24262F/FF5A1F?text=FILTER" alt="Filter Udara CleanAir Pro">Filter Udara CleanAir Pro</td>
-            <td>Mesin &amp; Filter</td><td>Universal</td><td class="price">Rp 95.000</td>
+          <tr data-category="listrik" data-name="Lampu bohlam 12V Philips">
+            <td class="prod-name"><img class="prod-thumb" src="assets/img/lampu12v.jpg"
+              alt="Lampu bohlam 12V Philips">Lampu Bohlam 12V Philips</td>
+            <td>Kelistrikan</td><td>Mobil</td><td class="price">Rp 8.000</td>
             <td><span class="stock-ok">● Tersedia</span></td>
-            <td><button class="add-btn" data-product="Filter CleanAir Pro">+ Keranjang</button></td>
           </tr>
-          <tr data-category="mesin" data-name="Busi Iridium SparkFire">
-            <td class="prod-name"><img class="prod-thumb" src="https://placehold.co/100x100/24262F/FF5A1F?text=BUSI" alt="Busi Iridium SparkFire">Busi Iridium SparkFire</td>
-            <td>Mesin &amp; Filter</td><td>Mobil &amp; Motor</td><td class="price">Rp 58.000</td>
+          <tr data-category="mesin" data-name="Baut Nap 14">
+            <td class="prod-name"><img class="prod-thumb" src="assets/img/b.nap14.png" 
+              alt="Baut Nap 14">Baut Nap 14</td>
+            <td>Mesin &amp; Filter</td><td>Mobil</td><td class="price">Rp 5.000</td>
             <td><span class="stock-ok">● Tersedia</span></td>
-            <td><button class="add-btn" data-product="Busi SparkFire">+ Keranjang</button></td>
+          </tr>
+          <tr data-category="mesin" data-name="Baut Roda PS Belakang">
+            <td class="prod-name"><img class="prod-thumb" src="assets/img/b.rdpsblkg.jpg" 
+              alt="Baut Roda PS Belakang">Baut Roda PS Belakang</td>
+            <td>Mesin &amp; Filter</td><td>Mobil</td><td class="price">Rp 70.000</td>
+            <td><span class="stock-ok">● Tersedia</span></td>
+          </tr>
+          <tr data-category="mesin" data-name="Filter Udara Rino HT">
+            <td class="prod-name"><img class="prod-thumb" src="assets/img/filterudararinoht.jpg" 
+              alt="Filter Udara Rino HT">Filter Udara Rino HT</td>
+            <td>Mesin &amp; Filter</td><td>Mobil</td><td class="price">Rp 95.000</td>
+            <td><span class="stock-ok">● Tersedia</span></td>
+          </tr>
+          <tr data-category="mesin" data-name="Filter Oli PS125">
+            <td class="prod-name"><img class="prod-thumb" src="assets/img/filterolips125.jpg" 
+              alt="Filter Oli PS125">Filter Oli PS125</td>
+            <td>Mesin &amp; Filter</td><td>Mobil</td><td class="price">Rp 70.000</td>
+            <td><span class="stock-ok">● Tersedia</span></td>
+          </tr>
+          <tr data-category="mesin" data-name="Filter Solar Canter PS">
+            <td class="prod-name"><img class="prod-thumb" src="assets/img/filtersolarctrps.jpg" 
+              alt="Filter Solar Canter PS">Filter Solar Canter PS</td>
+            <td>Mesin &amp; Filter</td><td>Mobil</td><td class="price">Rp 85.000</td>
+            <td><span class="stock-ok">● Tersedia</span></td>
+          </tr>
+          <tr data-category="mesin" data-name="Busi Motor NGK Iridium SparkFire">
+            <td class="prod-name"><img class="prod-thumb" src="assets/img/busimotorngk.jpg" 
+              alt="Busi Motor NGK Iridium SparkFire">Busi Motor NGK Iridium SparkFire</td>
+            <td>Mesin &amp; Filter</td><td>Motor</td><td class="price">Rp 15.000</td>
+            <td><span class="stock-ok">● Tersedia</span></td>
           </tr>
         </tbody>
       </table>
@@ -147,7 +170,8 @@
     <div class="footer-grid">
       <div>
         <div class="brand" style="margin-bottom:14px;">DRIVE<span class="dot">AUTO</span></div>
-        <p style="color:var(--paper-dim);font-size:.88rem;max-width:280px;">Mendigitalisasi bisnis sparepart Dewi Suba menjadi platform yang praktis, informatif, dan tepercaya bagi pengendara Indonesia.</p>
+        <p style="color:var(--paper-dim);font-size:.88rem;max-width:280px;">Mendigitalisasi bisnis sparepart 
+          Dewi Suba menjadi platform yang praktis, informatif, dan tepercaya bagi pengendara.</p>
         <div class="social-row" style="margin-top:18px;">
           <a href="#" aria-label="Instagram">IG</a>
           <a href="#" aria-label="WhatsApp">WA</a>
@@ -166,16 +190,16 @@
       <div>
         <h5>Kategori</h5>
         <ul>
-          <li><a href="produk.html">Ban &amp; Velg</a></li>
           <li><a href="produk.html">Oli &amp; Cairan</a></li>
           <li><a href="produk.html">Rem &amp; Suspensi</a></li>
           <li><a href="produk.html">Kelistrikan</a></li>
+          <li><a href="produk.html">Mesin &amp; Filter</a></li>
         </ul>
       </div>
       <div>
         <h5>Kontak</h5>
         <ul>
-          <li><a href="kontak.html">Jl. Suba Raya No. 12, Yogyakarta</a></li>
+          <li><a href="kontak.html">Jl. Rejosari Raya, Mranggen, Srumbung, Magelang</a></li>
           <li><a href="tel:+6281234567890">+62 812-3456-7890</a></li>
           <li><a href="mailto:halo@driveautoparts.id">halo@driveautoparts.id</a></li>
         </ul>
@@ -183,7 +207,6 @@
     </div>
     <div class="footer-bottom">
       <span>© <span id="current-year">2026</span> DriveAuto Parts. Final Project SI071 — SPARK Team.</span>
-      <span>Dibuat dengan HTML, CSS &amp; JavaScript</span>
     </div>
   </div>
 </footer>
